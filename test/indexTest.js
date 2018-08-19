@@ -16,8 +16,8 @@ describe('index.js', function () {
       expect(mostProfitableNeighborhood).to.equal('Chelsea');
     });
 
-    it('does not raise error if the mostProfitableNeighborhood is changed', function () {
-      expect(function () { mostProfitableNeighborhood = 'Upper West Side' }).to.not.throw(TypeError);
+    it('raises error if the mostProfitableNeighborhood is changed', function () {
+      expect(function () { mostProfitableNeighborhood = 'Upper West Side' }).to.throw(TypeError);
     });
   });
 
@@ -26,8 +26,8 @@ describe('index.js', function () {
       expect(companyCeo).to.equal('Susan Smith');
     });
 
-    it('does not raise error if the companyCeo is changed', function () {
-      expect(function () { companyCeo = 'Lauren Hart' }).to.not.throw(TypeError);
+    it('raises error if the companyCeo is changed', function () {
+      expect(function () { companyCeo = 'Lauren Hart' }).to.throw(TypeError);
     });
   });
 });
