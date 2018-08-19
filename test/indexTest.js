@@ -17,7 +17,7 @@ describe('index.js', function () {
     });
 
     it('raises error if the mostProfitableNeighborhood is changed', function () {
-      expect(function () { mostProfitableNeighborhood = 'Upper West Side' }).to.not.throw(TypeError);
+      expect(function () { mostProfitableNeighborhood = 'Upper West Side' }).to.throw(TypeError);
     });
   });
 
