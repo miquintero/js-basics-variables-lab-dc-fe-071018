@@ -1,1 +1,1 @@
-let companyName = "scuber"
+const companyName = "scuber"
